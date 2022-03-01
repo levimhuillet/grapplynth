@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da541904fa362740801f6fa41b4a3ae, type: 3}
+  m_Name: ClickSettings
+  m_EditorClassIdentifier: 
+  m_id: click_default
+  m_clip: {fileID: 8300000, guid: 010f4694701f57142aac962f59dfe851, type: 3}
+  m_volume: 1
+  m_pan: 0.5
