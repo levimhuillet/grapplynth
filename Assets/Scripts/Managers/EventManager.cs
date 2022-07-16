@@ -21,9 +21,6 @@ namespace Grapplynth {
 
         public static UnityEvent OnScoreChanged;
 
-        public static UnityEvent OnNoAds;
-        public static UnityEvent OnAdReward;
-
         private void OnEnable() {
             OnStart = new UnityEvent();
             OnPause = new UnityEvent();
@@ -40,9 +37,6 @@ namespace Grapplynth {
             OnSegmentScore = new UnityEvent();
 
             OnScoreChanged = new UnityEvent();
-
-            OnNoAds = new UnityEvent();
-            OnAdReward = new UnityEvent();
         }
     }
 }

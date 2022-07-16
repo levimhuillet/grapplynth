@@ -95,6 +95,7 @@ namespace Grapplynth {
         private void HandleOnNewLife() {
             m_gameIsPaused = false;
             Time.timeScale = 1;
+            IncrementKeepRunnings();
         }
 
         private void HandleOnReturnMain() {

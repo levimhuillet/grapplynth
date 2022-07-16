@@ -41,9 +41,6 @@ namespace Grapplynth {
             m_quitButton.onClick.AddListener(HandleQuit);
             m_resetButton.onClick.AddListener(HandleResetProgress);
             m_selectSkinButton.onClick.AddListener(HandleSelectSkin);
-
-            EventManager.OnNoAds.AddListener(HandleOnNoAds);
-            EventManager.OnAdReward.AddListener(HandleOnAdReward);
         }
 
         private void OnDisable() {
@@ -52,9 +49,6 @@ namespace Grapplynth {
             m_quitButton.onClick.RemoveAllListeners();
             m_resetButton.onClick.RemoveListener(HandleResetProgress);
             m_selectSkinButton.onClick.RemoveListener(HandleSelectSkin);
-
-            EventManager.OnNoAds.RemoveListener(HandleOnNoAds);
-            EventManager.OnAdReward.RemoveListener(HandleOnAdReward);
         }
 
         private void Start() {
@@ -104,20 +98,5 @@ namespace Grapplynth {
 
         #endregion
 
-        #region AdHandlers
-
-        private void HandleOnNoAds() {
-            m_adButton.interactable = false;
-            m_selectSkinButton.interactable = false;
-            m_noAdsMenu.SetActive(true);
-        }
-
-        private void HandleOnAdReward() {
-            m_adButton.interactable = false;
-            m_selectSkinButton.interactable = false;
-            m_adsRewardMenu.SetActive(true);
-        }
-
-        #endregion
     }
 }
